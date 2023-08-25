@@ -16,7 +16,11 @@ Template Name: Our Team
 		<div class="row">
 			<div class="col-xl-6 col-lg-12 col-md-12">
 				<div class="details-thumb">
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/team/team.jpg" alt="team members">
+					<?php 
+					$image = get_field('team_image');
+					if( !empty( $image ) ): ?>
+						<img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+					<?php endif; ?>					
 				</div>
 			</div>
 			<div class="col-xl-6 col-lg-12 col-md-12 pl--90 pr_sm--15 pl_sm--15 pt--10 pt_lg--40 pt_md--40 pt_sm--20" style="display: flex;align-items: center;">
@@ -54,7 +58,13 @@ Template Name: Our Team
                 <div class="swiper-wrapper">
 
                     <?php 
-                    $args = array( 'post_type' => 'team',  );
+                    $args = array( 'post_type' => 'team', 
+					 'post_status' => 'publish',
+					 'post_per_page' => -1,
+       			     'nopaging' => false,
+	  			     'order'    => 'DESC',
+					 'orderby'  => 'date',
+					);
                     $the_query = new WP_Query( $args ); 
                     ?>
                     <?php if ( $the_query->have_posts() ) : ?>

@@ -12,16 +12,13 @@
                 <div class="bread-tag">
                     <a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a>
                     <span> / </span>
-                    <a href="blog" class="active">Our Team</a>
+                    <a href="our-team" class="active">Our Team</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
 <!-- end breadcrumb area -->
-
-<div c
-
 
 <!-- start service details area -->
 <div class="rts-team-details rts-section-gap">
@@ -60,7 +57,12 @@
             <div class="col-xl-4 col-md-12 col-sm-12 col-12 mt_lg--60 pl--50 pl_md--0 pl-lg-controler pl_sm--0">
                 
                 <div class="thumbnail team-mem-img">
-                    <?php the_post_thumbnail(); ?>                            
+                    <?php //the_post_thumbnail(); ?>                            
+					<?php 
+					$image = get_field('member_image');
+					if( !empty( $image ) ): ?>
+						<img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+					<?php endif; ?>	
                 </div>
                 <!-- single wizered start -->
                 <div class="rts-single-wized Categories service">

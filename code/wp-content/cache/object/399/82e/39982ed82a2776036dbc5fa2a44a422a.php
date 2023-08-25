@@ -1,0 +1,1 @@
+mgèd<?php exit; ?>a:1:{s:7:"content";a:3:{s:17:"_wp_attached_file";a:1:{i:0;s:33:"2023/07/CapitalStreetLaw-LOGO.svg";}s:23:"_wp_attachment_metadata";a:1:{i:0;s:29:"a:1:{s:8:"filesize";i:23739;}";}s:24:"_wp_attachment_image_alt";a:1:{i:0;s:23:"Capital Street Law logo";}}}

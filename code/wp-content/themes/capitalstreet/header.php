@@ -13,6 +13,15 @@
 		<?php wp_head(); ?>
 		<!-- end of wordpress head -->
 
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-0YR3XH8JVG"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		  gtag('config', 'G-0YR3XH8JVG');
+		</script>
+
 	</head>
 
 	<body <?php body_class(); ?>>
@@ -43,7 +52,6 @@
 								</div>
 								<div class="single-right call">
 									<i class="far fa-phone-volume"></i>
-									<span>Hotline:</span>
 									<a href="tel:<?php echo $number; ?>"><?php echo $number; ?></a>
 								</div>
 							</div>

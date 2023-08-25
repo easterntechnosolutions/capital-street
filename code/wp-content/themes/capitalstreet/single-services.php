@@ -52,7 +52,7 @@
 					<?php endif; ?>
 					
 					
-					<div class="row g-5 mt--30 mb--40">						
+					<div class="row g-5 mb--40">						
 						<?php if( have_rows('service_details_card') ):
 							while( have_rows('service_details_card') ) : the_row(); 							
 							?>
@@ -102,9 +102,24 @@
                         echo "<h3>No Contents Found.</h3>";
                     } ?>
 
-                <hr>
+                <hr>								
                 </div>
+				
+				<div class="faq-section">
+					<div class="faq-body">
+						<a href="faqs">
+							<span>
+								Got questions? <br> We've got answers.
+							</span>
+						</a>
+						<div class="faq-btn-section">
+							<a href="faqs" class="faq-btn rts-btn">FAQs</a>
+						</div>						
+					</div>
+				</div>
+				
             </div>
+			
             <!--rts blog wizered area -->
             <div class="col-xl-4 col-md-12 col-sm-12 col-12 mt_lg--60 pl--50 pl_md--0 pl-lg-controler pl_sm--0">
                 <!-- single wizered start -->
@@ -137,6 +152,19 @@
                     </div>
                 </div>
                 <!-- single wizered End -->                				
+				
+				<div class="faq-side-section">
+					<div class="faq-side-body">
+						<a href="faqs">
+							<span>
+								Got questions? <br> We've got answers.
+							</span>
+						</a>
+						<div class="faq-btn-section">
+							<a href="faqs" class="faq-side-btn rts-btn">FAQs</a>
+						</div>						
+					</div>
+				</div>
 				
                 <!-- single wizered start -->
                 <div class="rts-single-wized contact service">

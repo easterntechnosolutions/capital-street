@@ -23,13 +23,13 @@ define('WP_CACHE', true); // Added by W3 Total Cache
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'easyglue_capitalstreet' );
+define( 'DB_NAME', 'capitalstreetlaw_primary' );
 
 /** Database username */
-define( 'DB_USER', 'easyglue_capitalstreet' );
+define( 'DB_USER', 'capitalstreetlaw_primary' );
 
 /** Database password */
-define( 'DB_PASSWORD', '7I)B[6tb0h2Y' );
+define( 'DB_PASSWORD', 'nsOwp^&cZ8Cm' );
 
 /** Database hostname */
 define( 'DB_HOST', 'localhost' );
@@ -97,5 +97,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
 
-
 define( 'ALLOW_UNFILTERED_UPLOADS', true );
+
+	
+define( 'WP_AUTO_UPDATE_CORE', false );

@@ -158,6 +158,9 @@
 <!-- about area two END -->
 
 <!-- start call to action area -->
+<div class="skyline-img">
+	<img src="<?php echo esc_url(home_url('/')); ?>/wp-content/uploads/2023/08/skyline.webp" alt="toronto-skyline">
+</div>
 <div class="rts-callto-acation-area rts-callto-acation-area4 bg-call-to-action-two counter-bg">
     <div class="container">
         <div class="row">
@@ -345,13 +348,12 @@
             <?php if ( $the_query->have_posts() ) : ?>
             <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
                 <div class="col-xl-4 col-lg-4 col-md-12">
-                    <a href="<?php echo get_permalink(); ?>" class="thumbnail">
+                    <a href="<?php echo get_permalink(); ?>">
                         <div class="service-one-inner-four">
                             <div class="big-thumbnail-area">
-                                <a href="<?php echo get_permalink(); ?>" class="thumbnail">                                    
+								<div class="thumbnail">																
                                     <?php the_post_thumbnail(); ?>
-                                    <!-- <img src="<?php //echo get_stylesheet_directory_uri(); ?>/images/home/blog-1.png" alt="Business-service"> -->
-                                </a>
+                                </div>
                                 <div class="content">
                                     <h5 class="title"><?php the_title(); ?></h5>
                                 </div>

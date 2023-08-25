@@ -44,7 +44,7 @@
                                                 
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="heading<?php echo $count ?>">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse<?php echo $count ?>" aria-expanded="true" aria-controls="collapse<?php echo $count ?>">
+                                        <button class="accordion-button <?php if($count > 1){echo "collapsed";} ?>" type="button" data-bs-toggle="collapse" data-bs-target="#collapse<?php echo $count ?>" aria-expanded="true" aria-controls="collapse<?php echo $count ?>">
                                             <span><?php echo get_sub_field('faq_number'); ?>.</span> <?php echo get_sub_field('faq_title'); ?>
                                         </button>
                                     </h2>

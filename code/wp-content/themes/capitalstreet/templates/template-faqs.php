@@ -25,7 +25,7 @@ Template Name: FAQs
             while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
                         
 			
-			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+			<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
 				<!-- single service start -->
 				<div class="rts-single-service-h2 inner">
 					<a href="<?php echo get_permalink(); ?>" class="thumbnail">

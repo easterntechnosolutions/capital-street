@@ -68,7 +68,12 @@ Template Name: About Us Content
 					
 					<div class="col-xl-6">
                         <div class="accordion-service-image pt_lg--60 pt_md--50 pt_sm--30">                            
-                            <img src="/wp-content/uploads/2023/06/about.webp" alt="About Us">
+<!--                             <img src="/wp-content/uploads/2023/06/about.webp" alt="About Us"> -->
+							<?php 
+							$image = get_field('about_image');
+							if( !empty( $image ) ): ?>
+								<img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+							<?php endif; ?>
                         </div>
                     </div>
 					
